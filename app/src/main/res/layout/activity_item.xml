@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ECEFF1"
+    app.cardCornerRadius="5dp"
+    android:elevation="4dp"
+    app:cardUseCompatPadding="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/cardview_shadow_start_color"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#ffffff">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageview1"
+                android:layout_width="76dp"
+                android:layout_height="78dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="9dp"
+                android:src="@drawable/po7" />
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="188dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/imageview1"
+                android:text=" Name: "
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="italic"></TextView>
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview1"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/imageview1"
+                android:text=" Width: "
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="199dp"
+                android:layout_height="29dp"
+                android:layout_below="@+id/textview2"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="13dp"
+                android:layout_toEndOf="@+id/imageview1"
+                android:text=" Height: "
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="italic"></TextView>
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="54dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="63dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/textview1"
+                android:text="10:43Pm"
+                android:textSize="12sp"
+                android:textStyle="italic"></TextView>
+            <ImageView
+                android:id="@+id/imageview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="77dp"
+                android:layout_marginTop="60dp"
+                android:layout_toRightOf="@+id/textview3"
+                android:background="@drawable/posit"
+                android:textStyle="italic" />
+        </RelativeLayout>
+        ></RelativeLayout>
+</androidx.cardview.widget.CardView>
